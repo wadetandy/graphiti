@@ -55,6 +55,42 @@ RSpec.describe "filtering" do
       end
     end
 
+    context "and it is a complex hash" do
+      before do
+        params[:filter] = {
+          by_json: {
+            id: 2,
+            id2: 3,
+            conditions: [
+              {
+                operator: "or",
+                name: "state",
+                value: {
+                  values: [
+                    {
+                      id: "Alabama",
+                      key: "Alabama",
+                      text: "Alabama",
+                      subText: nil
+                    # }, {
+                    #   id: "Alaska",
+                    #   key: "Alaska",
+                    #   text: "Alaska",
+                    #   subText: nil
+                    }
+                  ]
+                },
+              }
+            ]
+          }.to_json
+        }
+      end
+
+      it "still works" do
+        expect(records.map(&:id)).to eq([employee2.id, employee3.id])
+      end
+    end
+
     context "and an array of json objects passed" do
       before do
         params[:filter] = {
