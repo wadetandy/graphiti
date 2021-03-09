@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   # Default filters apply to every request, unless specifically overridden in
   # the request.

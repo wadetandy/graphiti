@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require "jsonapi/serializable/resource/conditional_fields"
 
 module Graphiti

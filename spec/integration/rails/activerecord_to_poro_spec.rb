@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 if ENV["APPRAISAL_INITIALIZED"]
   RSpec.describe "associating an ActiveRecord to a PORO", type: :controller do
     include GraphitiSpecHelpers

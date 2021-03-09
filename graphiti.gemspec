@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "graphiti/version"
@@ -32,4 +33,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "standard", "0.4.7"
   spec.add_development_dependency "activemodel", ">= 4.1"
   spec.add_development_dependency "graphiti_spec_helpers", "1.0.beta.4"
+  spec.add_development_dependency "stackprof"
 end

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # For "Rails STI" behavior
 # CreditCard.all # => [<Visa>, <Mastercard>, etc]
 module Graphiti

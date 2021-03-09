@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # This could definitely use some refactoring love, but I have no time ATM
 # The code is pretty self-contained; we're just listening to notifications
 # and taking action.

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   class Types
     def self.create(primitive, &blk)

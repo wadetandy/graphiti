@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   class Scoping::ExtraAttributes < Scoping::Base
     # Loop through all requested extra fields. If custom scoping

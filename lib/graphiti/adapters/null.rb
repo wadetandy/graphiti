@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   module Adapters
     # The Null adapter is a 'pass-through' adapter. It won't modify the scope.

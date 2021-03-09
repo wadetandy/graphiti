@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   module JsonapiSerializableExt
     # This library looks up a serializer based on the record's class name

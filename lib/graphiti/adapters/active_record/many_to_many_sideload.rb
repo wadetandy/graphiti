@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Graphiti::Adapters::ActiveRecord::ManyToManySideload < Graphiti::Sideload::ManyToMany
   def through_table_name
     @through_table_name ||= parent_resource_class.model

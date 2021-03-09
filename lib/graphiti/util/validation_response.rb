@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # We need to know two things in the response of a persistence call:
 #
 #   * The model we just tried to persist

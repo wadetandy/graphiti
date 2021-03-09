@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # https://robots.thoughtbot.com/mygem-configure-block
 module Graphiti
   class Configuration

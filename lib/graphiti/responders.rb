@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # If you're using Rails + responders gem to get respond_with
 module Graphiti
   module Responders

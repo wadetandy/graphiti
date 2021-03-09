@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti::Adapters::ActiveRecord::Inference
   # If going AR to AR, use AR introspection
   # If going AR to PORO, fall back to normal inference

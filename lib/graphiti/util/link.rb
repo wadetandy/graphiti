@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   module Util
     class Link
@@ -49,7 +50,7 @@ module Graphiti
       def on_demand_links(url)
         return url unless Graphiti.config.links_on_demand
 
-        url << if url.include?("?")
+        url += if url.include?("?")
           "&links=true"
         else
           "?links=true"

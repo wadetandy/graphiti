@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # rubocop: disable Style/GlobalVars
 
 if ENV["APPRAISAL_INITIALIZED"]

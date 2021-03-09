@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   module SerializableHash
     def to_hash(fields: nil, include: {}, name_chain: [], graphql: false)

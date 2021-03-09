@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   class Schema
     attr_reader :resources

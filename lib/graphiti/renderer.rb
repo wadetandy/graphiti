@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   class Renderer
     CONTENT_TYPE = "application/vnd.api+json"

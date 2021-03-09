@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   # Rails Integration. Mix this in to ApplicationController.
   #

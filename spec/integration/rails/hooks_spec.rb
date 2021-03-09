@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 if ENV["APPRAISAL_INITIALIZED"]
   RSpec.describe "persistence lifecycle hooks", type: :controller do
     class Callbacks

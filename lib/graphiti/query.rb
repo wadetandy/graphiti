@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   class Query
     attr_reader :resource, :association_name, :params, :action

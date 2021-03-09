@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   module Util
     # Helper methods for traversing the 'relationships' JSONAPI payloads

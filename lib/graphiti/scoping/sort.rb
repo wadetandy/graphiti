@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   # Apply sorting logic to the scope.
   #

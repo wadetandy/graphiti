@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   module Context
     extend ActiveSupport::Concern

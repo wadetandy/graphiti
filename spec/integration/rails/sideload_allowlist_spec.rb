@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 if ENV["APPRAISAL_INITIALIZED"]
   RSpec.describe "sideload allowlist", type: :controller do
     controller(ApplicationController) do

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 EMPLOYEE_CONTROLLER_BLOCK = lambda do |*args|
   def resource
     EmployeeResource

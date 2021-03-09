@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   module Errors
     class Base < StandardError; end
@@ -64,8 +65,8 @@ module Graphiti
       def message
         msg = "Error hitting remote API: #{@url}"
         @errors.each do |e|
-          msg << "\n\n#{e[:message]}"
-          msg << "\n\n#{e[:backtrace].join("\n")}\n\n\n\n" if e[:backtrace]
+          msg += "\n\n#{e[:message]}"
+          msg += "\n\n#{e[:backtrace].join("\n")}\n\n\n\n" if e[:backtrace]
         end
         msg
       end
@@ -176,8 +177,8 @@ module Graphiti
         msg = <<-MSG
           #{@resource.class.name}: tried to filter on #{@filter.keys[0].inspect}, but passed invalid #{value_string}.
         MSG
-        msg << "\nAllowlist: #{allow.inspect}" if allow
-        msg << "\nDenylist: #{deny.inspect}" if deny
+        msg += "\nAllowlist: #{allow.inspect}" if allow
+        msg += "\nDenylist: #{deny.inspect}" if deny
         msg
       end
     end
@@ -381,7 +382,7 @@ module Graphiti
       def message
         msg = super
 
-        msg << if @guard
+        msg += if @guard
           ", but the guard #{@guard.inspect} did not pass."
         else
           ", but the attribute was marked #{@flag.inspect} => false."
@@ -677,7 +678,7 @@ module Graphiti
       def message
         msg = "#{@resource.class.name}: The following filters had dependencies that were not passed:"
         @filters.each do |f|
-          msg << "\n#{f[:filter][:name].inspect} - dependent on #{f[:filter][:dependencies].inspect}, but #{f[:missing].inspect} not passed."
+          msg += "\n#{f[:filter][:name].inspect} - dependent on #{f[:filter][:dependencies].inspect}, but #{f[:missing].inspect} not passed."
         end
         msg
       end
@@ -775,7 +776,7 @@ module Graphiti
       def message
         if !@resource.nil? && !@id.nil?
           "The referenced resource '#{@resource}' with id '#{@id}' could not be found.".tap do |msg|
-            msg << " Referenced at '#{@path}'" unless @path.nil?
+            msg += " Referenced at '#{@path}'" unless @path.nil?
           end
         else
           "Specified Record Not Found"

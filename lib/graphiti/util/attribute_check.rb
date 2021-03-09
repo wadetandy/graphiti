@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Private, tested in resource specs
 module Graphiti
   module Util

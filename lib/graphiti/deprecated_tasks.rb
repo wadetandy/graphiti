@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 namespace :graphiti do
   def session
     @session ||= ActionDispatch::Integration::Session.new(Rails.application)

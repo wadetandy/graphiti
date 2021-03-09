@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   module Util
     # Utility class for dealing with Include Directives

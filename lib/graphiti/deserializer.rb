@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Responsible for parsing incoming write payloads
 #
 # Given a PUT payload like:

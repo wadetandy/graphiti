@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   class Sideload
     HOOK_ACTIONS = [:save, :create, :update, :destroy, :disassociate]

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 ActiveRecord::Schema.define(version: 1) do
   create_table :authors do |t|
     t.boolean :active, default: true

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require "spec_helper"
 
 RSpec.shared_context "pagination_context", shared_context: :metadata do

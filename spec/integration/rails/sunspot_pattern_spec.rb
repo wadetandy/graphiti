@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 if ENV["APPRAISAL_INITIALIZED"]
   # This tests the 'Sunspot Pattern':
   # Querying using ElasticSearch, Solr, etc, but returning ActiveRecord objects

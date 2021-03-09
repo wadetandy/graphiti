@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   module Extensions
     # Turns ruby ? methods into is_ attributes

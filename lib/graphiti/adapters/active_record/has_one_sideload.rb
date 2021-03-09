@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Graphiti::Adapters::ActiveRecord::HasOneSideload < Graphiti::Sideload::HasOne
   include Graphiti::Adapters::ActiveRecord::Inference
 

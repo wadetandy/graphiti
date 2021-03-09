@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   module GeneratorMixin
     def prompt(header: nil, description: nil, default: nil)

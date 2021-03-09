@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Graphiti::Sideload::HasMany < Graphiti::Sideload
   def initialize(name, opts)
     @inverse_filter = opts[:inverse_filter]

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 if ENV["APPRAISAL_INITIALIZED"]
   ::PersistenceTestsController = Class.new(ApplicationController, &EMPLOYEE_CONTROLLER_BLOCK)
 

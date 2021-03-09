@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   class Scoping::Filter < Scoping::Base
     include Scoping::Filterable
@@ -187,9 +188,9 @@ module Graphiti
       # Find the quoted strings
       quotes = value.scan(/{{.*?}}/)
       # remove them from the rest
-      quotes.each { |q| value.gsub!(q, "") }
+      quotes.each { |q| value = value.gsub(q, "") }
       # remove the quote characters from the quoted strings
-      quotes.each { |q| q.gsub!("{{", "").gsub!("}}", "") }
+      quotes.map! { |q| q.gsub("{{", "").gsub("}}", "") }
       # merge everything back together into an array
       value = if singular_filter
         Array(value) + quotes

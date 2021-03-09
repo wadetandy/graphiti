@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module UniversalControllerSpecHelper
   def universal_process(method, action, params)
     if Rails::VERSION::MAJOR == 4

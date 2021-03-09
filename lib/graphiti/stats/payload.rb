@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   module Stats
     # Generate the stats payload so we can return it in the response.

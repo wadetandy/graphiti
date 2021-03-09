@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   # @deprecated Use graphiti-rails's Graphiti::Rails::Railtie
   class Railtie < ::Rails::Railtie

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Graphiti::Sideload::HasOne < Graphiti::Sideload::HasMany
   def type
     :has_one

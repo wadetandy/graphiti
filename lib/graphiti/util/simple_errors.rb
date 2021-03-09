@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # A minimal implementation of an errors object similar to `ActiveModel::Errors`.
 # Designed to support internal Graphiti classes like the `RequestValidator` so
 # that there does not need to be a dependency on activemodel.

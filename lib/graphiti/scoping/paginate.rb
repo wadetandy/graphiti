@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   class Scoping::Paginate < Scoping::Base
     DEFAULT_PAGE_SIZE = 20

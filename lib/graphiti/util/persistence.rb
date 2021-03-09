@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Save the given Resource#model, and all of its nested relationships.
 # @api private
 class Graphiti::Util::Persistence

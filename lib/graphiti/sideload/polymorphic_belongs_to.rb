@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Graphiti::Sideload::PolymorphicBelongsTo < Graphiti::Sideload::BelongsTo
   class Group
     attr_reader :name, :calls

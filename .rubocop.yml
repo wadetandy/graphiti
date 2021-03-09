@@ -1,0 +1,6 @@
+AllCops:
+  DisabledByDefault: true
+  Exclude: []
+
+Style/FrozenStringLiteralComment:
+  Enabled: true

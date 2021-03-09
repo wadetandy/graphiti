@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Graphiti
   # If the object we are serializing has the instance variable
   # +@_jsonapi_temp_id+, render +temp-id+ in the {http://jsonapi.org/format/#document-resource-identifier-objects resource identifier}

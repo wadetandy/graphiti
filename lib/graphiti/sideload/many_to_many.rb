@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Graphiti::Sideload::ManyToMany < Graphiti::Sideload::HasMany
   def type
     :many_to_many
