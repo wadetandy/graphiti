@@ -207,6 +207,7 @@ module InstanceVariableOverride
     values
   end
 end
+
 class Object
   prepend InstanceVariableOverride
 end
